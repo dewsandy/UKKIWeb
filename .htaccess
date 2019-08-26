@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule Engine On
+
+RewriteRule ^([^/.]+)-([^/.]+)-([^/.]+)$ index.php?page=$1&id=$2&cari=$3
+RewriteRule ^([^/.]+)-([^/.]+)$ index.php?page=$1&id=$2
+RewriteRule ^([^/.]+)$ index.php?page=$1
